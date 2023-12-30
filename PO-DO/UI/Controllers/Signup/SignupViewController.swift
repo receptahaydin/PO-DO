@@ -25,13 +25,15 @@ class SignupViewController: UIViewController {
         let email = email.text!
         let password = password.text!
         
+        sender.isLoading = true
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             if let error = error {
-                print("Error creating user: \(error.localizedDescription)")
+                let b1 = CRXDialogButton(title: "OK", style: .default)  { print("YES") }
+                DialogView(title: "Error", message: error.localizedDescription, buttons: [b1]).show()
+                sender.isLoading = false
                 return
             }
-            
-            sender.isLoading = true
+
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
                 sender.isLoading = false
                 NavCoordinator.shared.requestNavigation(to: HomeViewController(), with: .replace, setRoot: true)

@@ -69,6 +69,8 @@
 		DCA5436F2B3EFCB200E6048E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA5436D2B3EFCB200E6048E /* HomeViewController.swift */; };
 		DCA543702B3EFCB200E6048E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCA5436E2B3EFCB200E6048E /* HomeViewController.xib */; };
 		DCA543732B3EFE6800E6048E /* LoaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA543722B3EFE6800E6048E /* LoaderButton.swift */; };
+		DCEDE8E42B402D0500779EC4 /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEDE8E22B402D0500779EC4 /* DialogView.swift */; };
+		DCEDE8E52B402D0500779EC4 /* DialogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCEDE8E32B402D0500779EC4 /* DialogView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +110,8 @@
 		DCA5436D2B3EFCB200E6048E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DCA5436E2B3EFCB200E6048E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		DCA543722B3EFE6800E6048E /* LoaderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderButton.swift; sourceTree = "<group>"; };
+		DCEDE8E22B402D0500779EC4 /* DialogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
+		DCEDE8E32B402D0500779EC4 /* DialogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DialogView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,7 @@
 		DC1BDCA42B3DCF5800E91E9B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DCEDE8E12B402CDD00779EC4 /* DialogView */,
 				DCA543712B3EFE4200E6048E /* LoaderButton */,
 				DC1BDCA52B3DCF7A00E91E9B /* DesignableUITextField */,
 			);
@@ -319,6 +324,15 @@
 			path = LoaderButton;
 			sourceTree = "<group>";
 		};
+		DCEDE8E12B402CDD00779EC4 /* DialogView */ = {
+			isa = PBXGroup;
+			children = (
+				DCEDE8E22B402D0500779EC4 /* DialogView.swift */,
+				DCEDE8E32B402D0500779EC4 /* DialogView.xib */,
+			);
+			path = DialogView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -411,6 +425,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCEDE8E52B402D0500779EC4 /* DialogView.xib in Resources */,
 				DC1BDCB92B3DD05F00E91E9B /* SignupViewController.xib in Resources */,
 				DCA5432F2B3EF44600E6048E /* GoogleService-Info.plist in Resources */,
 				DC8189442B37289B004B3A88 /* OnboardingViewController.xib in Resources */,
@@ -454,6 +469,7 @@
 				DC8189062B3704FA004B3A88 /* CALayerExtensions.swift in Sources */,
 				DC1BDCBB2B3DD06E00E91E9B /* SignupViewController.swift in Sources */,
 				DC8189392B370B87004B3A88 /* SplashViewController.swift in Sources */,
+				DCEDE8E42B402D0500779EC4 /* DialogView.swift in Sources */,
 				DC47951F2B3CA43E00F38120 /* DesignableUITextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,6 @@
 import UIKit
 import FirebaseAuth
 
-
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var email: DesignableUITextField!
@@ -26,10 +25,13 @@ class LoginViewController: UIViewController {
         let email = email.text!
         let password = password.text!
         
+        sender.isLoading = true
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
             guard let strongSelf = self else { return }
             if let error = error {
-                print("Error creating user: \(error.localizedDescription)")
+                let b1 = CRXDialogButton(title: "OK", style: .default)  { print("YES") }
+                DialogView(title: "Error", message: error.localizedDescription, buttons: [b1]).show()
+                sender.isLoading = false
                 return
             }
             
