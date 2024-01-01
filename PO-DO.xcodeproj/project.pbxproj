@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC114B5C2B4063AF005F7927 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC114B5B2B4063AF005F7927 /* OnboardingViewController.swift */; };
 		DC1BDC9B2B3DCD7500E91E9B /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DC1BDC9A2B3DCD7500E91E9B /* IQKeyboardManagerSwift */; };
 		DC1BDCB92B3DD05F00E91E9B /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC1BDCB82B3DD05E00E91E9B /* SignupViewController.xib */; };
 		DC1BDCBB2B3DD06E00E91E9B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BDCBA2B3DD06E00E91E9B /* SignupViewController.swift */; };
@@ -36,8 +37,10 @@
 		DC8189392B370B87004B3A88 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8189362B370B87004B3A88 /* SplashViewController.swift */; };
 		DC81893A2B370B87004B3A88 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC8189372B370B87004B3A88 /* SplashViewController.xib */; };
 		DC81893C2B370CA7004B3A88 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC81893B2B370CA7004B3A88 /* Colors.xcassets */; };
-		DC8189432B37289B004B3A88 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8189412B37289B004B3A88 /* OnboardingViewController.swift */; };
-		DC8189442B37289B004B3A88 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC8189422B37289B004B3A88 /* OnboardingViewController.xib */; };
+		DCA467B02B405260008F29E8 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA467AC2B405260008F29E8 /* OnboardingSlide.swift */; };
+		DCA467B12B405260008F29E8 /* OnboardingCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA467AD2B405260008F29E8 /* OnboardingCVC.swift */; };
+		DCA467B32B405260008F29E8 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA467AF2B405260008F29E8 /* OnboardingViewModel.swift */; };
+		DCA467B52B405424008F29E8 /* OnboardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA467B42B405424008F29E8 /* OnboardingViewController.storyboard */; };
 		DCA5432F2B3EF44600E6048E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCA5432E2B3EF44600E6048E /* GoogleService-Info.plist */; };
 		DCA543372B3EF80D00E6048E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DCA543362B3EF80D00E6048E /* FirebaseAnalytics */; };
 		DCA543392B3EF80D00E6048E /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = DCA543382B3EF80D00E6048E /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -74,6 +77,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC114B5B2B4063AF005F7927 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		DC1BDCB82B3DD05E00E91E9B /* SignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
 		DC1BDCBA2B3DD06E00E91E9B /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		DC1BDCC42B3DD10B00E91E9B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -104,8 +108,10 @@
 		DC8189362B370B87004B3A88 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		DC8189372B370B87004B3A88 /* SplashViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		DC81893B2B370CA7004B3A88 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		DC8189412B37289B004B3A88 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
-		DC8189422B37289B004B3A88 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
+		DCA467AC2B405260008F29E8 /* OnboardingSlide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		DCA467AD2B405260008F29E8 /* OnboardingCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingCVC.swift; sourceTree = "<group>"; };
+		DCA467AF2B405260008F29E8 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		DCA467B42B405424008F29E8 /* OnboardingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingViewController.storyboard; sourceTree = "<group>"; };
 		DCA5432E2B3EF44600E6048E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DCA5436D2B3EFCB200E6048E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DCA5436E2B3EFCB200E6048E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -301,8 +307,11 @@
 		DC81893D2B372827004B3A88 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				DC8189412B37289B004B3A88 /* OnboardingViewController.swift */,
-				DC8189422B37289B004B3A88 /* OnboardingViewController.xib */,
+				DCA467AD2B405260008F29E8 /* OnboardingCVC.swift */,
+				DCA467AC2B405260008F29E8 /* OnboardingSlide.swift */,
+				DCA467AF2B405260008F29E8 /* OnboardingViewModel.swift */,
+				DCA467B42B405424008F29E8 /* OnboardingViewController.storyboard */,
+				DC114B5B2B4063AF005F7927 /* OnboardingViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -426,9 +435,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCEDE8E52B402D0500779EC4 /* DialogView.xib in Resources */,
+				DCA467B52B405424008F29E8 /* OnboardingViewController.storyboard in Resources */,
 				DC1BDCB92B3DD05F00E91E9B /* SignupViewController.xib in Resources */,
 				DCA5432F2B3EF44600E6048E /* GoogleService-Info.plist in Resources */,
-				DC8189442B37289B004B3A88 /* OnboardingViewController.xib in Resources */,
 				DC81893C2B370CA7004B3A88 /* Colors.xcassets in Resources */,
 				DC8188EA2B3700E9004B3A88 /* LaunchScreen.storyboard in Resources */,
 				DC8188E72B3700E9004B3A88 /* Assets.xcassets in Resources */,
@@ -446,8 +455,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC1BDCC62B3DD10B00E91E9B /* LoginViewController.swift in Sources */,
+				DCA467B12B405260008F29E8 /* OnboardingCVC.swift in Sources */,
 				DC8189112B3704FA004B3A88 /* UITableView+Extensions.swift in Sources */,
-				DC8189432B37289B004B3A88 /* OnboardingViewController.swift in Sources */,
 				DC8189052B3704FA004B3A88 /* UICollectionView+Reusable.swift in Sources */,
 				DC8189092B3704FA004B3A88 /* UIButton+Extensions.swift in Sources */,
 				DC8188F42B37042B004B3A88 /* NavCoordinator.swift in Sources */,
@@ -458,6 +467,7 @@
 				DC81891F2B370510004B3A88 /* ReusableView.swift in Sources */,
 				DCA5436F2B3EFCB200E6048E /* HomeViewController.swift in Sources */,
 				DC81890A2B3704FA004B3A88 /* String+Extensions.swift in Sources */,
+				DC114B5C2B4063AF005F7927 /* OnboardingViewController.swift in Sources */,
 				DC81890E2B3704FA004B3A88 /* UIDevice+Extensions.swift in Sources */,
 				DC8189072B3704FA004B3A88 /* UIViewController+Extensions.swift in Sources */,
 				DC8188DE2B3700E8004B3A88 /* AppDelegate.swift in Sources */,
@@ -468,8 +478,10 @@
 				DC8189202B370510004B3A88 /* XIBLocalizable.swift in Sources */,
 				DC8189062B3704FA004B3A88 /* CALayerExtensions.swift in Sources */,
 				DC1BDCBB2B3DD06E00E91E9B /* SignupViewController.swift in Sources */,
+				DCA467B32B405260008F29E8 /* OnboardingViewModel.swift in Sources */,
 				DC8189392B370B87004B3A88 /* SplashViewController.swift in Sources */,
 				DCEDE8E42B402D0500779EC4 /* DialogView.swift in Sources */,
+				DCA467B02B405260008F29E8 /* OnboardingSlide.swift in Sources */,
 				DC47951F2B3CA43E00F38120 /* DesignableUITextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

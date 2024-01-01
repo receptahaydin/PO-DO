@@ -12,7 +12,7 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            NavCoordinator.shared.requestNavigation(to: SignupViewController(), with: .replace, setRoot: true)
+            NavCoordinator.shared.requestNavigation(to: OnboardingViewController(viewModel: OnboardingViewModel()), with: .replace, setRoot: true)
         }
     }
 }
