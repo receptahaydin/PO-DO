@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		247DB7C338AD53E9F7D708A3 /* Pods_PO_DO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CC958791E2A0F2F2A07E6A /* Pods_PO_DO.framework */; };
 		DC114B5C2B4063AF005F7927 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC114B5B2B4063AF005F7927 /* OnboardingViewController.swift */; };
 		DC1BDC9B2B3DCD7500E91E9B /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DC1BDC9A2B3DCD7500E91E9B /* IQKeyboardManagerSwift */; };
 		DC1BDCB92B3DD05F00E91E9B /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC1BDCB82B3DD05E00E91E9B /* SignupViewController.xib */; };
@@ -14,6 +15,8 @@
 		DC1BDCC62B3DD10B00E91E9B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BDCC42B3DD10B00E91E9B /* LoginViewController.swift */; };
 		DC1BDCC92B3DD15400E91E9B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC1BDCC82B3DD15400E91E9B /* LoginViewController.xib */; };
 		DC47951F2B3CA43E00F38120 /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC47951E2B3CA43E00F38120 /* DesignableUITextField.swift */; };
+		DC74DD912B4497C00003E1A5 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74DD902B4497C00003E1A5 /* RoundedButton.swift */; };
+		DC74DD942B44A4610003E1A5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74DD932B44A4610003E1A5 /* CardView.swift */; };
 		DC8188DE2B3700E8004B3A88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8188DD2B3700E8004B3A88 /* AppDelegate.swift */; };
 		DC8188E72B3700E9004B3A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC8188E62B3700E9004B3A88 /* Assets.xcassets */; };
 		DC8188EA2B3700E9004B3A88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC8188E82B3700E9004B3A88 /* LaunchScreen.storyboard */; };
@@ -77,12 +80,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B2C4ED79553F91FCEE3977E5 /* Pods-PO-DO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PO-DO.release.xcconfig"; path = "Target Support Files/Pods-PO-DO/Pods-PO-DO.release.xcconfig"; sourceTree = "<group>"; };
+		B4CC958791E2A0F2F2A07E6A /* Pods_PO_DO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PO_DO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7D0E69ED659D5C71C97D25E /* Pods-PO-DO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PO-DO.debug.xcconfig"; path = "Target Support Files/Pods-PO-DO/Pods-PO-DO.debug.xcconfig"; sourceTree = "<group>"; };
 		DC114B5B2B4063AF005F7927 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		DC1BDCB82B3DD05E00E91E9B /* SignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
 		DC1BDCBA2B3DD06E00E91E9B /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		DC1BDCC42B3DD10B00E91E9B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DC1BDCC82B3DD15400E91E9B /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		DC47951E2B3CA43E00F38120 /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
+		DC74DD902B4497C00003E1A5 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		DC74DD932B44A4610003E1A5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DC8188DA2B3700E8004B3A88 /* PO-DO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PO-DO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC8188DD2B3700E8004B3A88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC8188E62B3700E9004B3A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -153,15 +161,35 @@
 				DCA5434D2B3EF80D00E6048E /* FirebaseDynamicLinks in Frameworks */,
 				DCA5434F2B3EF80D00E6048E /* FirebaseFirestore in Frameworks */,
 				DCA543672B3EF80D00E6048E /* FirebaseRemoteConfigSwift in Frameworks */,
+				247DB7C338AD53E9F7D708A3 /* Pods_PO_DO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FF809BAF6AF5BF694958DF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7D0E69ED659D5C71C97D25E /* Pods-PO-DO.debug.xcconfig */,
+				B2C4ED79553F91FCEE3977E5 /* Pods-PO-DO.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8FCB6294BDA64CD0D7A291E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4CC958791E2A0F2F2A07E6A /* Pods_PO_DO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DC1BDCA42B3DCF5800E91E9B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DC74DD922B44A4560003E1A5 /* CardView */,
+				DC74DD8F2B44979B0003E1A5 /* RoundedButton */,
 				DCEDE8E12B402CDD00779EC4 /* DialogView */,
 				DCA543712B3EFE4200E6048E /* LoaderButton */,
 				DC1BDCA52B3DCF7A00E91E9B /* DesignableUITextField */,
@@ -195,11 +223,29 @@
 			path = Signup;
 			sourceTree = "<group>";
 		};
+		DC74DD8F2B44979B0003E1A5 /* RoundedButton */ = {
+			isa = PBXGroup;
+			children = (
+				DC74DD902B4497C00003E1A5 /* RoundedButton.swift */,
+			);
+			path = RoundedButton;
+			sourceTree = "<group>";
+		};
+		DC74DD922B44A4560003E1A5 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				DC74DD932B44A4610003E1A5 /* CardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
 		DC8188D12B3700E7004B3A88 = {
 			isa = PBXGroup;
 			children = (
 				DC8188DC2B3700E8004B3A88 /* PO-DO */,
 				DC8188DB2B3700E8004B3A88 /* Products */,
+				2FF809BAF6AF5BF694958DF9 /* Pods */,
+				8FCB6294BDA64CD0D7A291E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -349,9 +395,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC8188EE2B3700E9004B3A88 /* Build configuration list for PBXNativeTarget "PO-DO" */;
 			buildPhases = (
+				CA52211C3B318E5DAFA3D391 /* [CP] Check Pods Manifest.lock */,
 				DC8188D62B3700E8004B3A88 /* Sources */,
 				DC8188D72B3700E8004B3A88 /* Frameworks */,
 				DC8188D82B3700E8004B3A88 /* Resources */,
+				4206AB7C87C7CC70E0EE40A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -449,12 +497,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4206AB7C87C7CC70E0EE40A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PO-DO/Pods-PO-DO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PO-DO/Pods-PO-DO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PO-DO/Pods-PO-DO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA52211C3B318E5DAFA3D391 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PO-DO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DC8188D62B3700E8004B3A88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DC1BDCC62B3DD10B00E91E9B /* LoginViewController.swift in Sources */,
+				DC74DD912B4497C00003E1A5 /* RoundedButton.swift in Sources */,
 				DCA467B12B405260008F29E8 /* OnboardingCVC.swift in Sources */,
 				DC8189112B3704FA004B3A88 /* UITableView+Extensions.swift in Sources */,
 				DC8189052B3704FA004B3A88 /* UICollectionView+Reusable.swift in Sources */,
@@ -462,6 +553,7 @@
 				DC8188F42B37042B004B3A88 /* NavCoordinator.swift in Sources */,
 				DC8189082B3704FA004B3A88 /* Localization.swift in Sources */,
 				DC81891C2B370510004B3A88 /* UiModelState.swift in Sources */,
+				DC74DD942B44A4610003E1A5 /* CardView.swift in Sources */,
 				DC81890F2B3704FA004B3A88 /* UIApplication+Extensions.swift in Sources */,
 				DC8189102B3704FA004B3A88 /* UIWindow+Extensions.swift in Sources */,
 				DC81891F2B370510004B3A88 /* ReusableView.swift in Sources */,
@@ -621,12 +713,14 @@
 		};
 		DC8188EF2B3700E9004B3A88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7D0E69ED659D5C71C97D25E /* Pods-PO-DO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M9BG9J9LFY;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "PO-DO/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "PO-DO";
@@ -654,12 +748,14 @@
 		};
 		DC8188F02B3700E9004B3A88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2C4ED79553F91FCEE3977E5 /* Pods-PO-DO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M9BG9J9LFY;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "PO-DO/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "PO-DO";
