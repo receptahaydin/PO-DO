@@ -84,8 +84,10 @@
                         <constraint firstAttribute="height" constant="44" id="3fU-9z-yVt"/>
                     </constraints>
                     <items>
-                        <tabBarItem systemItem="favorites" id="Tg2-cs-YiR"/>
-                        <tabBarItem systemItem="more" id="cwn-s9-HrF"/>
+                        <tabBarItem title="Home" image="house.fill" catalog="system" id="Tg2-cs-YiR"/>
+                        <tabBarItem title="Projects" image="list.bullet.rectangle.fill" catalog="system" id="ZPe-vC-cXz"/>
+                        <tabBarItem title="Analytics" image="chart.bar.xaxis" catalog="system" id="egl-f3-Vc6"/>
+                        <tabBarItem title="Settings" image="gearshape.fill" catalog="system" id="cwn-s9-HrF"/>
                     </items>
                     <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tabBar>
@@ -172,6 +174,18 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZvC-Aj-wmk" customClass="PodoHeaderView" customModule="PO_DO" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="VT4-ph-3bM"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hasBackButton" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hasDismissButton" value="NO"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Pomodoro Timer"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -186,6 +200,8 @@
                 <constraint firstItem="tD1-uI-D66" firstAttribute="leading" secondItem="4mP-Ep-rhV" secondAttribute="trailing" constant="30" id="G4B-Im-JyR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="adq-Cx-91c" secondAttribute="trailing" constant="20" id="HHb-Cs-rIN"/>
                 <constraint firstItem="tD1-uI-D66" firstAttribute="centerY" secondItem="4mP-Ep-rhV" secondAttribute="centerY" id="I67-ON-uRx"/>
+                <constraint firstItem="ZvC-Aj-wmk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="K6A-Gu-Dt5"/>
+                <constraint firstItem="ZvC-Aj-wmk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="L00-fa-4YI"/>
                 <constraint firstItem="4mP-Ep-rhV" firstAttribute="leading" secondItem="x2j-fR-bNO" secondAttribute="trailing" constant="30" id="Mbj-wM-aci"/>
                 <constraint firstItem="m8M-P8-adI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="Qad-iF-z7Q"/>
                 <constraint firstItem="adq-Cx-91c" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="SmS-IG-wCH"/>
@@ -199,9 +215,10 @@
                 <constraint firstItem="FvG-ts-py9" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="ohA-R2-wHd"/>
                 <constraint firstItem="drj-RL-IcV" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.1" id="qgD-r8-9RX"/>
                 <constraint firstItem="1yQ-wC-UWM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rye-MO-dcP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZvC-Aj-wmk" secondAttribute="trailing" id="tmi-mG-GDM"/>
                 <constraint firstItem="x2j-fR-bNO" firstAttribute="height" secondItem="4mP-Ep-rhV" secondAttribute="height" multiplier="0.5" id="yJv-Cd-yWd"/>
             </constraints>
-            <point key="canvasLocation" x="-44" y="20"/>
+            <point key="canvasLocation" x="-45.038167938931295" y="19.718309859154932"/>
         </view>
     </objects>
     <designables>
@@ -220,7 +237,11 @@
     </designables>
     <resources>
         <image name="arrow.clockwise" catalog="system" width="113" height="128"/>
+        <image name="chart.bar.xaxis" catalog="system" width="128" height="97"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
         <image name="green" width="1024" height="1024"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="list.bullet.rectangle.fill" catalog="system" width="128" height="93"/>
         <image name="pause.fill" catalog="system" width="117" height="128"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="stop.fill" catalog="system" width="128" height="113"/>

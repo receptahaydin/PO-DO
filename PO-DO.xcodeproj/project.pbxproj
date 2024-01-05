@@ -75,6 +75,8 @@
 		DCA5436F2B3EFCB200E6048E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA5436D2B3EFCB200E6048E /* HomeViewController.swift */; };
 		DCA543702B3EFCB200E6048E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCA5436E2B3EFCB200E6048E /* HomeViewController.xib */; };
 		DCA543732B3EFE6800E6048E /* LoaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA543722B3EFE6800E6048E /* LoaderButton.swift */; };
+		DCEDBEA92B4890FE00824938 /* PodoHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCEDBEA72B4890FE00824938 /* PodoHeaderView.xib */; };
+		DCEDBEAA2B4890FE00824938 /* PodoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEDBEA82B4890FE00824938 /* PodoHeaderView.swift */; };
 		DCEDE8E42B402D0500779EC4 /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEDE8E22B402D0500779EC4 /* DialogView.swift */; };
 		DCEDE8E52B402D0500779EC4 /* DialogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCEDE8E32B402D0500779EC4 /* DialogView.xib */; };
 /* End PBXBuildFile section */
@@ -124,6 +126,8 @@
 		DCA5436D2B3EFCB200E6048E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DCA5436E2B3EFCB200E6048E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		DCA543722B3EFE6800E6048E /* LoaderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderButton.swift; sourceTree = "<group>"; };
+		DCEDBEA72B4890FE00824938 /* PodoHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PodoHeaderView.xib; sourceTree = "<group>"; };
+		DCEDBEA82B4890FE00824938 /* PodoHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodoHeaderView.swift; sourceTree = "<group>"; };
 		DCEDE8E22B402D0500779EC4 /* DialogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
 		DCEDE8E32B402D0500779EC4 /* DialogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DialogView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,6 +192,7 @@
 		DC1BDCA42B3DCF5800E91E9B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DCEDBEA62B488EA600824938 /* Header */,
 				DC74DD922B44A4560003E1A5 /* CardView */,
 				DC74DD8F2B44979B0003E1A5 /* RoundedButton */,
 				DCEDE8E12B402CDD00779EC4 /* DialogView */,
@@ -379,6 +384,15 @@
 			path = LoaderButton;
 			sourceTree = "<group>";
 		};
+		DCEDBEA62B488EA600824938 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				DCEDBEA82B4890FE00824938 /* PodoHeaderView.swift */,
+				DCEDBEA72B4890FE00824938 /* PodoHeaderView.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		DCEDE8E12B402CDD00779EC4 /* DialogView */ = {
 			isa = PBXGroup;
 			children = (
@@ -487,6 +501,7 @@
 				DC1BDCB92B3DD05F00E91E9B /* SignupViewController.xib in Resources */,
 				DCA5432F2B3EF44600E6048E /* GoogleService-Info.plist in Resources */,
 				DC81893C2B370CA7004B3A88 /* Colors.xcassets in Resources */,
+				DCEDBEA92B4890FE00824938 /* PodoHeaderView.xib in Resources */,
 				DC8188EA2B3700E9004B3A88 /* LaunchScreen.storyboard in Resources */,
 				DC8188E72B3700E9004B3A88 /* Assets.xcassets in Resources */,
 				DC1BDCC92B3DD15400E91E9B /* LoginViewController.xib in Resources */,
@@ -575,6 +590,7 @@
 				DCEDE8E42B402D0500779EC4 /* DialogView.swift in Sources */,
 				DCA467B02B405260008F29E8 /* OnboardingSlide.swift in Sources */,
 				DC47951F2B3CA43E00F38120 /* DesignableUITextField.swift in Sources */,
+				DCEDBEAA2B4890FE00824938 /* PodoHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
