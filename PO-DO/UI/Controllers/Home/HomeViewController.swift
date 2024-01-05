@@ -20,5 +20,6 @@ class HomeViewController: UIViewController {
         timer.isLabelHidden = false
         timer.labelTextColor = .black
         timer.start(beginingValue: 90, interval: 1)
+        
     }
 }
