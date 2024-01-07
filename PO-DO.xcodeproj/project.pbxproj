@@ -75,6 +75,14 @@
 		DCA5436F2B3EFCB200E6048E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA5436D2B3EFCB200E6048E /* HomeViewController.swift */; };
 		DCA543702B3EFCB200E6048E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCA5436E2B3EFCB200E6048E /* HomeViewController.xib */; };
 		DCA543732B3EFE6800E6048E /* LoaderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA543722B3EFE6800E6048E /* LoaderButton.swift */; };
+		DCEBBDF42B4AFB1400C58E33 /* PodoTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBBDF22B4AFB1400C58E33 /* PodoTabBarView.swift */; };
+		DCEBBDF52B4AFB1400C58E33 /* PodoTabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCEBBDF32B4AFB1400C58E33 /* PodoTabBarView.xib */; };
+		DCEBBDF92B4AFBDB00C58E33 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBBDF72B4AFBDB00C58E33 /* ProjectsViewController.swift */; };
+		DCEBBDFA2B4AFBDB00C58E33 /* ProjectsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCEBBDF82B4AFBDB00C58E33 /* ProjectsViewController.xib */; };
+		DCEBBDFF2B4B2F5200C58E33 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBBDFD2B4B2F5200C58E33 /* SettingsViewController.swift */; };
+		DCEBBE002B4B2F5200C58E33 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCEBBDFE2B4B2F5200C58E33 /* SettingsViewController.xib */; };
+		DCEBBE032B4B300B00C58E33 /* AnalyticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBBE012B4B300B00C58E33 /* AnalyticsViewController.swift */; };
+		DCEBBE042B4B300B00C58E33 /* AnalyticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCEBBE022B4B300B00C58E33 /* AnalyticsViewController.xib */; };
 		DCEDBEA92B4890FE00824938 /* PodoHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCEDBEA72B4890FE00824938 /* PodoHeaderView.xib */; };
 		DCEDBEAA2B4890FE00824938 /* PodoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEDBEA82B4890FE00824938 /* PodoHeaderView.swift */; };
 		DCEDE8E42B402D0500779EC4 /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEDE8E22B402D0500779EC4 /* DialogView.swift */; };
@@ -126,6 +134,14 @@
 		DCA5436D2B3EFCB200E6048E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DCA5436E2B3EFCB200E6048E /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		DCA543722B3EFE6800E6048E /* LoaderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderButton.swift; sourceTree = "<group>"; };
+		DCEBBDF22B4AFB1400C58E33 /* PodoTabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodoTabBarView.swift; sourceTree = "<group>"; };
+		DCEBBDF32B4AFB1400C58E33 /* PodoTabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PodoTabBarView.xib; sourceTree = "<group>"; };
+		DCEBBDF72B4AFBDB00C58E33 /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		DCEBBDF82B4AFBDB00C58E33 /* ProjectsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectsViewController.xib; sourceTree = "<group>"; };
+		DCEBBDFD2B4B2F5200C58E33 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DCEBBDFE2B4B2F5200C58E33 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		DCEBBE012B4B300B00C58E33 /* AnalyticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsViewController.swift; sourceTree = "<group>"; };
+		DCEBBE022B4B300B00C58E33 /* AnalyticsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnalyticsViewController.xib; sourceTree = "<group>"; };
 		DCEDBEA72B4890FE00824938 /* PodoHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PodoHeaderView.xib; sourceTree = "<group>"; };
 		DCEDBEA82B4890FE00824938 /* PodoHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodoHeaderView.swift; sourceTree = "<group>"; };
 		DCEDE8E22B402D0500779EC4 /* DialogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
@@ -192,6 +208,7 @@
 		DC1BDCA42B3DCF5800E91E9B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DCEBBDED2B4AFA8C00C58E33 /* TabBar */,
 				DCEDBEA62B488EA600824938 /* Header */,
 				DC74DD922B44A4560003E1A5 /* CardView */,
 				DC74DD8F2B44979B0003E1A5 /* RoundedButton */,
@@ -337,6 +354,9 @@
 		DC81892E2B370B53004B3A88 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DCEBBDFC2B4B2F1200C58E33 /* Settings */,
+				DCEBBDFB2B4B2F0400C58E33 /* Analytics */,
+				DCEBBDF62B4AFBC700C58E33 /* Projects */,
 				DCA5436C2B3EFCA400E6048E /* Home */,
 				DC4795122B3C99EF00F38120 /* Signup */,
 				DC1BDCBE2B3DD0BE00E91E9B /* Login */,
@@ -382,6 +402,42 @@
 				DCA543722B3EFE6800E6048E /* LoaderButton.swift */,
 			);
 			path = LoaderButton;
+			sourceTree = "<group>";
+		};
+		DCEBBDED2B4AFA8C00C58E33 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				DCEBBDF22B4AFB1400C58E33 /* PodoTabBarView.swift */,
+				DCEBBDF32B4AFB1400C58E33 /* PodoTabBarView.xib */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		DCEBBDF62B4AFBC700C58E33 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				DCEBBDF72B4AFBDB00C58E33 /* ProjectsViewController.swift */,
+				DCEBBDF82B4AFBDB00C58E33 /* ProjectsViewController.xib */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		DCEBBDFB2B4B2F0400C58E33 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				DCEBBE012B4B300B00C58E33 /* AnalyticsViewController.swift */,
+				DCEBBE022B4B300B00C58E33 /* AnalyticsViewController.xib */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		DCEBBDFC2B4B2F1200C58E33 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DCEBBDFD2B4B2F5200C58E33 /* SettingsViewController.swift */,
+				DCEBBDFE2B4B2F5200C58E33 /* SettingsViewController.xib */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		DCEDBEA62B488EA600824938 /* Header */ = {
@@ -501,12 +557,16 @@
 				DC1BDCB92B3DD05F00E91E9B /* SignupViewController.xib in Resources */,
 				DCA5432F2B3EF44600E6048E /* GoogleService-Info.plist in Resources */,
 				DC81893C2B370CA7004B3A88 /* Colors.xcassets in Resources */,
+				DCEBBE002B4B2F5200C58E33 /* SettingsViewController.xib in Resources */,
+				DCEBBDFA2B4AFBDB00C58E33 /* ProjectsViewController.xib in Resources */,
+				DCEBBE042B4B300B00C58E33 /* AnalyticsViewController.xib in Resources */,
 				DCEDBEA92B4890FE00824938 /* PodoHeaderView.xib in Resources */,
 				DC8188EA2B3700E9004B3A88 /* LaunchScreen.storyboard in Resources */,
 				DC8188E72B3700E9004B3A88 /* Assets.xcassets in Resources */,
 				DC1BDCC92B3DD15400E91E9B /* LoginViewController.xib in Resources */,
 				DC81893A2B370B87004B3A88 /* SplashViewController.xib in Resources */,
 				DCA543702B3EFCB200E6048E /* HomeViewController.xib in Resources */,
+				DCEBBDF52B4AFB1400C58E33 /* PodoTabBarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,6 +630,7 @@
 				DC81891C2B370510004B3A88 /* UiModelState.swift in Sources */,
 				DC74DD942B44A4610003E1A5 /* CardView.swift in Sources */,
 				DC81890F2B3704FA004B3A88 /* UIApplication+Extensions.swift in Sources */,
+				DCEBBE032B4B300B00C58E33 /* AnalyticsViewController.swift in Sources */,
 				DC8189102B3704FA004B3A88 /* UIWindow+Extensions.swift in Sources */,
 				DC81891F2B370510004B3A88 /* ReusableView.swift in Sources */,
 				DCA5436F2B3EFCB200E6048E /* HomeViewController.swift in Sources */,
@@ -577,10 +638,13 @@
 				DC114B5C2B4063AF005F7927 /* OnboardingViewController.swift in Sources */,
 				DC81890E2B3704FA004B3A88 /* UIDevice+Extensions.swift in Sources */,
 				DC8189072B3704FA004B3A88 /* UIViewController+Extensions.swift in Sources */,
+				DCEBBDF92B4AFBDB00C58E33 /* ProjectsViewController.swift in Sources */,
 				DC8188DE2B3700E8004B3A88 /* AppDelegate.swift in Sources */,
 				DC81890B2B3704FA004B3A88 /* UIFont+Extensions.swift in Sources */,
 				DC81890D2B3704FA004B3A88 /* UIColor+Extensions.swift in Sources */,
 				DC81890C2B3704FA004B3A88 /* UIView+Extension.swift in Sources */,
+				DCEBBDFF2B4B2F5200C58E33 /* SettingsViewController.swift in Sources */,
+				DCEBBDF42B4AFB1400C58E33 /* PodoTabBarView.swift in Sources */,
 				DCA543732B3EFE6800E6048E /* LoaderButton.swift in Sources */,
 				DC8189202B370510004B3A88 /* XIBLocalizable.swift in Sources */,
 				DC8189062B3704FA004B3A88 /* CALayerExtensions.swift in Sources */,

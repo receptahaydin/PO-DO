@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnalyticsViewController" customModule="PO_DO" customModuleProvider="target">
+            <connections>
+                <outlet property="tabBarView" destination="H5k-DV-dVS" id="tTQ-SM-ehk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5k-DV-dVS" customClass="PodoTabBarView" customModule="PO_DO" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="774" width="393" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="mZk-m8-szL"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKi-Yg-wAJ" customClass="PodoHeaderView" customModule="PO_DO" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="PzL-44-79P"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="hasBackButton" value="NO"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Analytics"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dKi-Yg-wAJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2FQ-Rd-nwB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dKi-Yg-wAJ" secondAttribute="trailing" id="Zqg-Qb-xhS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H5k-DV-dVS" secondAttribute="trailing" id="ev6-KM-KHW"/>
+                <constraint firstItem="H5k-DV-dVS" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="gdT-wO-qik"/>
+                <constraint firstItem="dKi-Yg-wAJ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sPp-8m-3Vy"/>
+                <constraint firstItem="H5k-DV-dVS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zA3-Od-gri"/>
+            </constraints>
+            <point key="canvasLocation" x="-13" y="20"/>
+        </view>
+    </objects>
+</document>

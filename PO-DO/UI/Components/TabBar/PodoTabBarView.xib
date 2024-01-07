@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PodoTabBarView" customModule="PO_DO" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="vMD-5j-9xb"/>
+                <outlet property="tabBar" destination="2Lm-o2-7p2" id="c35-qd-KuZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="74"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Lm-o2-7p2">
+                    <rect key="frame" x="0.0" y="30" width="393" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="rNe-y6-onc"/>
+                    </constraints>
+                    <items>
+                        <tabBarItem title="Home" image="house.fill" catalog="system" id="JGF-BY-t2v"/>
+                        <tabBarItem tag="1" title="Projects" image="list.bullet.rectangle.fill" catalog="system" id="LAw-5k-gzD"/>
+                        <tabBarItem tag="2" title="Analytics" image="chart.bar.xaxis" catalog="system" id="VOa-jo-e9o"/>
+                        <tabBarItem tag="3" title="Settings" image="gearshape.fill" catalog="system" id="qhc-rj-JJY"/>
+                    </items>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tabBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Tc-9y-26f" customClass="RoundedButton" customModule="PO_DO" customModuleProvider="target">
+                    <rect key="frame" x="177" y="10.333333333333332" width="39" height="39.333333333333343"/>
+                    <color key="backgroundColor" name="PODORed"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="8Tc-9y-26f" secondAttribute="height" multiplier="1:1" id="3N7-zL-oAc"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="plus" catalog="system"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="8Tc-9y-26f" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3Bc-jA-60P"/>
+                <constraint firstItem="2Lm-o2-7p2" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="FPl-Ar-gnh"/>
+                <constraint firstItem="2Lm-o2-7p2" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="S7g-i6-lfY"/>
+                <constraint firstItem="8Tc-9y-26f" firstAttribute="centerY" secondItem="2Lm-o2-7p2" secondAttribute="firstBaseline" id="c41-lC-7b3"/>
+                <constraint firstItem="8Tc-9y-26f" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.1" id="hh3-73-5Gs"/>
+                <constraint firstItem="2Lm-o2-7p2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="kwl-ax-AK8"/>
+            </constraints>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                    <color key="value" name="PODORed"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="136.95652173913044" y="91.304347826086968"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chart.bar.xaxis" catalog="system" width="128" height="97"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="list.bullet.rectangle.fill" catalog="system" width="128" height="93"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="PODORed">
+            <color red="0.9137254901960784" green="0.23529411764705882" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
