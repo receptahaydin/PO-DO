@@ -24,7 +24,7 @@
 
 import UIKit
 
-@objc public protocol SRCountdownTimerDelegate: class {
+@objc public protocol SRCountdownTimerDelegate: AnyObject {
     @objc optional func timerDidUpdateCounterValue(sender: SRCountdownTimer, newValue: Int)
     @objc optional func timerDidStart(sender: SRCountdownTimer)
     @objc optional func timerDidPause(sender: SRCountdownTimer)
@@ -45,8 +45,8 @@ public class SRCountdownTimer: UIView {
     public weak var delegate: SRCountdownTimerDelegate?
     
     // use minutes and seconds for presentation
-    public var useMinutesAndSecondsRepresentation = false
-    public var moveClockWise = true
+    public var useMinutesAndSecondsRepresentation = true
+    public var moveClockWise = false
 
     private var timer: Timer?
     private var beginingValue: Int = 1
@@ -119,6 +119,7 @@ public class SRCountdownTimer: UIView {
         }
     
         context?.setLineWidth(lineWidth)
+        context?.setLineCap(.round)
 
         // Main line
         context?.beginPath()

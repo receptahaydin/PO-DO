@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="PO_DO" customModuleProvider="target">
             <connections>
+                <outlet property="bigButton" destination="4mP-Ep-rhV" id="5BQ-9X-lql"/>
                 <outlet property="timer" destination="m8M-P8-adI" id="o0g-wi-R5V"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -50,6 +51,9 @@
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="bigButtonAction:" destination="-1" eventType="touchUpInside" id="tYc-4D-BId"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2j-fR-bNO" userLabel="RefreshButton" customClass="RoundedButton" customModule="PO_DO" customModuleProvider="target">
                     <rect key="frame" x="68.333333333333329" y="625" width="49" height="49.333333333333371"/>
@@ -63,6 +67,9 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="refreshButtonAction:" destination="-1" eventType="touchUpInside" id="6Fp-m2-pTz"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tD1-uI-D66" userLabel="StopButton" customClass="RoundedButton" customModule="PO_DO" customModuleProvider="target">
                     <rect key="frame" x="275.66666666666669" y="625" width="49" height="49.333333333333371"/>
@@ -76,6 +83,9 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="YES"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="stopButtonAction:" destination="-1" eventType="touchUpInside" id="4eH-5w-imC"/>
+                    </connections>
                 </button>
                 <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FvG-ts-py9">
                     <rect key="frame" x="0.0" y="774" width="393" height="44"/>
@@ -182,7 +192,6 @@
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="hasBackButton" value="YES"/>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="hasDismissButton" value="NO"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Pomodoro Timer"/>
                     </userDefinedRuntimeAttributes>
                 </view>
