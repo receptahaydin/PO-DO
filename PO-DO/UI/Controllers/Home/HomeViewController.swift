@@ -12,6 +12,11 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var timer: SRCountdownTimer!
     @IBOutlet weak var bigButton: RoundedButton!
+    @IBOutlet weak var timerLabel: UILabel! {
+        didSet {
+            timerLabel.font = timerLabel.font.monospacedDigitFont
+        }
+    }
     
     let greenColor = UIColor.init(hexString: "55AA67")
     
@@ -25,8 +30,8 @@ class HomeViewController: UIViewController {
         timer.lineColor = UIColor.lightGray.withAlphaComponent(0.5)
         timer.trailLineColor = UIColor.init(hexString: "55AA67")
         timer.isLabelHidden = false
-        timer.labelTextColor = .black
-        timer.start(beginingValue: 15, interval: 1)
+        timer.delegate = self
+        timer.start(beginingValue: 1500, interval: 1)
     }
     
     @IBAction func bigButtonAction(_ sender: Any) {
@@ -62,5 +67,32 @@ class HomeViewController: UIViewController {
             bigButton.backgroundColor = greenColor
             bigButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
         }
+    }
+}
+
+extension HomeViewController: SRCountdownTimerDelegate {
+    func timerDidUpdateCounterValue(sender: SRCountdownTimer, newValue: Int) {
+           if timer.useMinutesAndSecondsRepresentation {
+               timerLabel.text = timer.getMinutesAndSeconds(remainingSeconds: newValue)
+           } else {
+               timerLabel.text = "\(newValue)"
+           }
+       }
+}
+
+extension UIFont {
+    var monospacedDigitFont: UIFont {
+        let newFontDescriptor = fontDescriptor.monospacedDigitFontDescriptor
+        return UIFont(descriptor: newFontDescriptor, size: 0)
+    }
+}
+
+private extension UIFontDescriptor {
+    var monospacedDigitFontDescriptor: UIFontDescriptor {
+        let fontDescriptorFeatureSettings = [[UIFontDescriptor.FeatureKey.featureIdentifier: kNumberSpacingType,
+                                              UIFontDescriptor.FeatureKey.typeIdentifier: kMonospacedNumbersSelector]]
+        let fontDescriptorAttributes = [UIFontDescriptor.AttributeName.featureSettings: fontDescriptorFeatureSettings]
+        let fontDescriptor = self.addingAttributes(fontDescriptorAttributes)
+        return fontDescriptor
     }
 }
